@@ -2,10 +2,10 @@ var path = require("path");
 
 var config = {
     entry: [
-        "./src/app.tsx"
+        "./src/app/app.tsx"
     ],
     output: {
-        path: path.resolve(__dirname, "build"), 
+        path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
     },
     debug: true,
@@ -17,7 +17,8 @@ var config = {
         loaders: [
             {
                 test: /\.tsx?$/,
-                loader: "ts-loader"
+                loader: "ts-loader",
+                exclude: /node_modules/
             }
         ]
     }
