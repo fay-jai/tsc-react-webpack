@@ -19670,11 +19670,6 @@
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
 	var React = __webpack_require__(2);
-	var HelloProps = (function () {
-	    function HelloProps() {
-	    }
-	    return HelloProps;
-	}());
 	var Hello = (function (_super) {
 	    __extends(Hello, _super);
 	    function Hello() {

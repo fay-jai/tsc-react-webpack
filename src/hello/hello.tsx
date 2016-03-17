@@ -1,7 +1,7 @@
 import * as React from "react";
 
-class HelloProps {
-    public name: string;
+interface HelloProps {
+    name: string;
 }
 
 class Hello extends React.Component<HelloProps, {}> {
