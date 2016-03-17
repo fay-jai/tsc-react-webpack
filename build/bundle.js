@@ -55,7 +55,9 @@
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(159);
 	var hello_1 = __webpack_require__(160);
-	ReactDOM.render(React.createElement(hello_1.default, {name: "Willson Mock"}), document.getElementById("root"));
+	var aModule_1 = __webpack_require__(161);
+	ReactDOM.render(React.createElement(hello_1.default, {name: aModule_1.name}), document.getElementById("root"));
+	console.log(aModule_1.timeNow());
 
 
 /***/ },
@@ -19682,6 +19684,17 @@
 	}(React.Component));
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = Hello;
+
+
+/***/ },
+/* 161 */
+/***/ function(module, exports) {
+
+	"use strict";
+	exports.name = "Willson";
+	exports.timeNow = function () {
+	    return "It's " + new Date().toString() + " right now.";
+	};
 
 
 /***/ }
